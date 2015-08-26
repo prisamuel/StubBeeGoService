@@ -10,8 +10,6 @@ go get -u github.com/jstemmer/go-junit-report
 
 godep restore
 
-cp .env-sample .env
-
 go test -v | go-junit-report > report.xml
 
 go build
