@@ -1,4 +1,4 @@
-# This is a stub Microservice that does some json transformation.
+# This is a stub Microservice that does some JSON transformation.
 
 Requirements:
 goLang
