@@ -6,7 +6,7 @@ func TestJsonTransformer(t *testing.T) {
 	cases := []struct {
 		in, want string
 	}{
-		{`{"title":"Leap of faith"}`, `{"Headline":"Leap of faith"}`},
+		{`{"title":"Leap of less faith"}`, `{"Headline":"Leap of faith"}`},
 	}
 	for _, c := range cases {
 		got := jsonTransformer(c.in)
