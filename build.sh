@@ -2,14 +2,6 @@
 
 set -euo pipefail
 
-export PATH=$PATH:$GOPATH/bin
+docker build -t stubbeego .
 
-go get github.com/tools/godep
-
-go get -u github.com/jstemmer/go-junit-report
-
-godep restore
-
-go test -v | go-junit-report > report.xml
-
-go build
+docker run -a stdin -a stdout -P -it stubbeego ./test.sh > report.xml
