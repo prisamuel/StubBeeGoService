@@ -2,3 +2,4 @@
 
 Requirements:
 goLang
+Docker for deployment
